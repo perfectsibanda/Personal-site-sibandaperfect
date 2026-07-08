@@ -6,12 +6,36 @@ body {
      padding-top: 20px;
 }
 
-h1 {
+header {
      background: linear-gradient(to bottom, rgb(246, 246, 246), rgb(238, 233, 233));
      border-radius: 5px;
+     gap: 35%;
 }
 
 h2 {
      background-color: aliceblue;
      width: max-content;
+}
+
+header {
+     display: flex;
+}
+
+nav {
+     font-size: 25px;
+     padding-top: 35px;
+     justify-content: space-evenly;
+}
+
+a {
+
+     color: black;
+
+}
+
+#app {
+     background-color: rgb(161, 237, 161);
+     border-radius: 6px;
+     width: 20px;
+     height: 20px;
 }
