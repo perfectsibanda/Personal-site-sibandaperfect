@@ -1,0 +1,17 @@
+body {
+     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));
+     font-family: sans-serif;
+     align-items: center;
+     padding-left: 20px;
+     padding-top: 20px;
+}
+
+h1 {
+     background: linear-gradient(to bottom, rgb(246, 246, 246), rgb(238, 233, 233));
+     border-radius: 5px;
+}
+
+h2 {
+     background-color: aliceblue;
+     width: max-content;
+}
