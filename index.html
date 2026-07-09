@@ -3,23 +3,6 @@
 
 <head>
      <style>
-          @keyframes personal-animation {
-               from {
-                    transform: translateX(-100%);
-                    /* Starts completely hidden to the left */
-                    opacity: 0;
-                    /* Invisible at the start */
-               }
-
-               to {
-                    transform: translateX(0);
-                    /* Slides into its actual position */
-                    opacity: 1;
-                    /* Fully visible at the end */
-               }
-          }
-
-
           body {
                background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));
                font-family: sans-serif;
@@ -29,7 +12,11 @@
           }
 
           header {
-               background: linear-gradient(to bottom, rgb(246, 246, 246), rgb(238, 233, 233));
+               top: 0;
+               left: 0;
+               background-color: rgba(225, 225, 224, 0.7);
+               backdrop-filter: blur(10px);
+               width: 100%;
                border-radius: 5px;
                gap: 35%;
           }
@@ -43,7 +30,12 @@
                display: flex;
           }
 
+          section {
+               margin: 40px;
+          }
+
           nav {
+
                font-size: 25px;
                padding-top: 35px;
                justify-content: space-evenly;
@@ -73,12 +65,30 @@
           .third-slide {
                animation: personal-animation 3s ease-out forwards;
           }
+
+          @keyframes personal-animation {
+               from {
+                    transform: translateX(-100%);
+                    /* Starts completely hidden to the left */
+                    opacity: 0;
+                    /* Invisible at the start */
+               }
+
+               to {
+                    transform: translateX(0);
+                    /* Slides into its actual position */
+                    opacity: 1;
+                    /* Fully visible at the end */
+               }
+          }
      </style>
      <link rel="stylesheet" href="style.css">
 
      <title>
 
      </title>
+     <meta viewport="width=device-width, initial-scale=1.0">
+     <meta lang="eng">
 </head>
 
 
@@ -94,8 +104,10 @@
      </header>
      <br><br><br>
      <section id="about" class="first-slide">
-          <h2>About Me 😁</h2>
-          <p>Hi my name is Perfect Sibanda . 18 year old enthusiast in tech from zim 🌍, nice to meet you .</p>
+          <h2><b> Me 😁</b></h2>
+          <p>Hi my name is <b>Perfect Sibanda</b> . 18 year old <i>enthusiast</i> in tech from zim 🌍, nice to meet you
+               .
+          </p>
      </section>
      <br>
 
