@@ -3,6 +3,23 @@
 
 <head>
      <style>
+          @keyframes personal-animation {
+               from {
+                    transform: translateX(-100%);
+                    /* Starts completely hidden to the left */
+                    opacity: 0;
+                    /* Invisible at the start */
+               }
+
+               to {
+                    transform: translateX(0);
+                    /* Slides into its actual position */
+                    opacity: 1;
+                    /* Fully visible at the end */
+               }
+          }
+
+
           body {
                background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));
                font-family: sans-serif;
@@ -44,6 +61,10 @@
                width: 20px;
                height: 20px;
           }
+
+          .personal-animation {
+               animation: personal-animation 1s ease-out forwards;
+          }
      </style>
      <link rel="stylesheet" href="style.css">
 
@@ -64,20 +85,20 @@
           </nav>
      </header>
      <br><br><br>
-     <section id="about">
+     <section id="about" class="personal-animation">
           <h2>About Me 😁</h2>
           <p>Hi my name is Perfect Sibanda . 18 year old enthusiast in tech from zim 🌍, nice to meet you .</p>
      </section>
      <br>
 
-     <section id="projects">
+     <section id="projects" class="personal-animation">
           <h2>Projects📚</h2>
           <p>So far ive only uploaded one project to the web . link is right here👉..
                <a href="https://netstudy-manunure.edgeone.dev/index.html" target="_blank"> Project Link</a>
           </p>
      </section>
      <br>
-     <section id="contact">
+     <section id="contact" class="personal-animation">
           <h2>Contact Perfect 📞</h2>
           <p>Feel free to reach out to me on my socials or email me at <a
                     href="mailto:perfectsibanda982@gmail.com">perfectsibanda982@gmail.com</a></p>
