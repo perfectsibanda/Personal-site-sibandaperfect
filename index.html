@@ -4,6 +4,7 @@
 <head>
      <style>
           body {
+               background-color: black;
                background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255));
                font-family: sans-serif;
                align-items: center;
@@ -84,6 +85,13 @@
 
           .third-slide {
                animation: personal-animation 3s ease-out forwards;
+          }
+
+          .first-slide:hover {
+               background-color: rgba(225, 225, 224, 0.7);
+               backdrop-filter: blur(10px);
+               border-radius: 5px;
+
           }
 
           @keyframes personal-animation {
